@@ -1,0 +1,93 @@
+@media screen and (max-width: 320px) {
+  .daily-details-grid-item {
+    font-size: 12px;
+  }
+}
+
+.title {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.title.dark {
+  color: #fff;
+}
+
+.accordion {
+  margin-top: 10px;
+}
+
+.daily-item {
+  background: #fff;
+  border-radius: 70px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.daily-item.dark {
+  background: #757575;
+}
+
+.icon-small {
+  width: 40px;
+}
+
+.day {
+  color: #212121;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.description {
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 7.5px;
+  text-align: right;
+}
+
+.min-max {
+  color: #656565;
+}
+
+.day.dark,
+.description.dark,
+.min-max.dark {
+  background: transparent;
+  color: #fff;
+}
+
+.daily-details-grid {
+  display: grid;
+  grid-row-gap: 0;
+  row-gap: 0;
+  column-gap: 15px;
+  grid-column: 15px;
+  grid-template-columns: auto auto;
+  flex: 1 1;
+  padding: 5px 15px;
+}
+
+.daily-details-grid-item {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label:first-child {
+  color: #757575;
+}
+
+.daily-details-grid label:last-child {
+  color: #212121;
+}
+
+.daily-details-grid.dark label:last-child {
+  color: #fff;
+}

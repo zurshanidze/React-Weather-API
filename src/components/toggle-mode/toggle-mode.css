@@ -1,0 +1,75 @@
+.toggle-wrapper {
+  position: fixed;
+  width: 80px;
+  height: 44px;
+  top: 2px;
+  right: 20px;
+  margin: 4px auto;
+  padding: 0px;
+  border-radius: 50px;
+  background: rgba(173, 172, 172, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(2px);
+}
+
+.toggle-wrapper.dark {
+  background: rgba(58, 58, 58, 0.7);
+}
+
+.toggle-circle {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #faed3f, #e42c2c);
+  margin-left: -1px;
+  margin-top: -1px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  animation: lightToDark 0.3 linear ease-in-out;
+  -webkit-animation: lightToDark 0.3s linear ease-in-out;
+}
+
+.toggle-circle.dark {
+  background: #504f4f;
+  box-shadow: 0px 0px 30px 5px #504f4f;
+  left: 45%;
+  animation: lightToDark 0.3s linear ease-in-out;
+  -webkit-animation: lightToDark 0.3s linear ease-in-out;
+  animation: shadow 10s linear infinite;
+}
+
+@keyframes lightToDark {
+  0% {
+    left: 0%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes darkToLight {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 50px 30px 7px -4px #f3eea9 inset;
+  }
+  25% {
+    box-shadow: 0px 0px 7px -4px #f3eea9 inset, -4px -2px 5px 2px #302f2f inset;
+  }
+  50% {
+    box-shadow: 0px 0px 7px -4px #f3eea9 inset, 4px 2px 5px 2px #302f2f inset;
+  }
+  100% {
+    box-shadow: -50px -30px 7px -4px #f3eea9 inset;
+  }
+}

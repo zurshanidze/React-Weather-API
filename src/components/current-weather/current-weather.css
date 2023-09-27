@@ -1,0 +1,117 @@
+.weather {
+  width: 87%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 10px -2px 20px 2px rgba(0, 0, 0, 0.3);
+  color: white;
+  background: #303232;
+  margin: 20px auto 30px auto;
+  padding: 10px 20px 20px 20px;
+}
+
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.city-weather-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.city-countryCode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city,
+.countryCode {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.city {
+  margin-right: 15px;
+}
+
+.region,
+.population {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.region label,
+.population label {
+  text-align: end;
+}
+
+.region label:first-child,
+.population label:first-child {
+  margin-right: 5px;
+  font-weight: 400;
+  color: #bcc0c0;
+}
+
+.region label:last-child,
+.population label:last-child {
+  font-weight: 800;
+  /* color: #bcc0c0; */
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1px;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  min-width: fit-content;
+  letter-spacing: 0px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.details {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.parameter-label.top {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
